@@ -80,14 +80,14 @@ body {
 }
 
 .banner-section {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 .banner-title {
   color: #131313;
   font-weight: 700;
-  font-size: 4.25rem;
+  font-size: 4rem;
   text-transform: capitalize;
 }
 .banner-description {
@@ -102,3 +102,22 @@ body {
   width: 100%;
   margin-top: 2rem;
 }
+
+/* Media Query Styles */
+@media screen and (max-width: 576px){
+    .header-area{
+        padding: 20px;
+    }
+    .nav-group{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-group{
+        flex-direction: column;
+    }
+    .header-area{
+        padding: 55px;
+    }
+} 
