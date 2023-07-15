@@ -104,29 +104,10 @@ body {
   margin-top: 2rem;
 }
 
-/* Media Query Styles */
-@media screen and (max-width: 576px) {
-  .header-area {
-    padding: 20px;
-  }
-  .nav-group {
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  .nav-group {
-    flex-direction: column;
-  }
-  .header-area {
-    padding: 55px;
-  }
-}
-
 /* Main Section Start */
 
 main {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -167,3 +148,28 @@ main {
   line-height: 1.80rem;
   margin: 1rem 0rem;
 }
+
+
+/* Media Query Styles */
+@media screen and (max-width: 576px) {
+    .header-area, .team-container{
+      padding: 20px;
+    }
+    .nav-group, .team-container{
+      flex-direction: column;
+    }
+    .team-section{
+        grid-template-columns: 1fr;
+    }
+    
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-group, .team-container{
+      flex-direction: column;
+    }
+    .header-area, .team-container {
+      padding: 55px;
+    }
+
+  }
